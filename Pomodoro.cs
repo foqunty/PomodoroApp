@@ -18,8 +18,8 @@ Console.CursorVisible = false;
 
 //working time
 for (int i = 1 ; i<=  loopCount ; i++){
-    bool completedWork = await RunTimer(1,$"WORK (Loop{i}/{loopCount})");
-
+    bool completedWork = await RunTimer(25,$"WORK (Loop{i}/{loopCount})");
+    
     if(!completedWork){
         Console.Clear();
         Console.WriteLine("Pomodoro loop interrupted. Exiting...");
